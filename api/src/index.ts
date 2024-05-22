@@ -10,8 +10,20 @@ import fallback from '@blocklet/sdk/lib/middlewares/fallback';
 
 import logger from './libs/logger';
 import routes from './routes';
+import db from './models';
 
 dotenv.config();
+async function init() {
+  await db.authenticate();
+  db.sync()
+    .then(function () {
+      // console.log('connected to database')
+    })
+    .catch(function () {
+      // console.log(err)
+    });
+}
+init();
 
 const { name, version } = require('../../package.json');
 

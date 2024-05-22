@@ -1,10 +1,10 @@
 import middleware from '@blocklet/sdk/lib/middlewares';
 import { Router } from 'express';
-import todoListRouter from './todo-list';
+import localInfo from './local-info';
 
 const router = Router();
 
 router.use('/user', middleware.user(), (req, res) => res.json(req.user || {}));
-router.use('/todo-list', middleware.user(), todoListRouter);
+router.use('/local-info', middleware.user(), localInfo);
 
 export default router;

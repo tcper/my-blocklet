@@ -39,7 +39,7 @@
   "dependencies": {
     "@arcblock/did-auth": "^1.18.113",
     "@arcblock/did-auth-storage-nedb": "^1.7.1",
-    "@arcblock/did-connect": "^2.9.63",
+    "@arcblock/did-connect": "^2.9.81",
     "@arcblock/ux": "^2.9.63",
     "@blocklet/js-sdk": "^1.16.26",
     "@blocklet/sdk": "^1.16.24",
@@ -63,7 +63,9 @@
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3",
     "react-toastify": "^10.0.5",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@arcblock/eslint-config": "^0.2.4",
@@ -78,6 +80,7 @@
     "@types/react-dom": "^18.2.22",
     "@types/react-toastify": "^4.1.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
     "bumpp": "^8.2.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
@@ -87,8 +90,10 @@
     "lint-staged": "^12.5.0",
     "nodemon": "^3.1.0",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-import-sort": "^0.0.7",
+    "tailwindcss": "^3.4.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3",
     "vite": "^5.0.13",
