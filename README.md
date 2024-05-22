@@ -1,7 +1,3 @@
-# todo-list-example
-
-## How to start
-
 ### Install dependencies
 
 ```shell
@@ -13,7 +9,7 @@ pnpm install
 ### Start
 
 ```shell
-yarn dev
+blocklet dev
 ```
 
 ### Tech Stack
